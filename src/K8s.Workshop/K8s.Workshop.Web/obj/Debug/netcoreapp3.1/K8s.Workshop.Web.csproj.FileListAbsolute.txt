@@ -34,3 +34,5 @@ C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\obj
 C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\obj\Debug\netcoreapp3.1\K8s.Workshop.Web.pdb
 C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\obj\Debug\netcoreapp3.1\K8s.Workshop.Web.genruntimeconfig.cache
 C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\obj\Debug\netcoreapp3.1\K8s.Workshop.Web.csproj.CopyComplete
+C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\rgodle\source\repos\k8s-workshop2\src\K8s.Workshop\K8s.Workshop.Web\obj\Debug\netcoreapp3.1\K8s.Workshop.Web.csprojAssemblyReference.cache

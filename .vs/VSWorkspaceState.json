@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\K8s.Workshop",
+    "\\src\\K8s.Workshop\\K8s.Workshop.Api",
+    "\\src\\K8s.Workshop\\K8s.Workshop.Web"
   ],
-  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

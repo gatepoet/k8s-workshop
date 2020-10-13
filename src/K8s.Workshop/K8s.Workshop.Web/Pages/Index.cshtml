@@ -1,10 +1,39 @@
 ﻿@page
+@using K8s.Workshop.Api
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <table>
+        <tr>
+            <td>Summary</td>
+            <td>Date</td>
+            <td>TemperatureC</td>
+            <td>TemperatureF</td>
+        </tr>      
+        @foreach (var wf in (WeatherForecast[]) ViewData["weatherForecasts"])
+        {
+            <tr>
+                <td>
+                    @wf.Summary
+                </td>
+                <td>
+                    @wf.Date
+                </td>
+                <td>
+                    @wf.TemperatureC
+                </td>
+                <td>
+                    @wf.TemperatureF
+                </td>
+
+            </tr>
+        }
+    </table>
 </div>

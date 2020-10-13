@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+ED7G3EXXrMTdpBqIwBc/2W+iPUb0oYa5yxDyJamEJ62yjN1XJCVHQj0qfU0GBAswoF8fvLp6ny7Q1fPj+H54Q==",
+  "dgSpecHash": "wJd4HU2vhQlJnID6J+9NzeuqH34Dcawplqnh/NFWRF9lZZFzBO5YgJdpjCdP2DQYWUTCY1BWqgnm/j8LOM4mbw==",
   "success": true,
   "projectFilePath": "C:\\Users\\rgodle\\source\\repos\\k8s-workshop2\\src\\K8s.Workshop\\K8s.Workshop.Web\\K8s.Workshop.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rgodle\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
   "logs": []
 }

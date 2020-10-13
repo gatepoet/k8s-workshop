@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8s.Workshop.Api", "K8s.Workshop.Api\K8s.Workshop.Api.csproj", "{7CE94EB1-809B-4BCB-99D1-DDECBA4EF27C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K8s.Workshop.Api", "K8s.Workshop.Api\K8s.Workshop.Api.csproj", "{7CE94EB1-809B-4BCB-99D1-DDECBA4EF27C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K8s.Workshop.Web", "K8s.Workshop.Web\K8s.Workshop.Web.csproj", "{22D86959-0C46-41D5-BB6C-5445D2212DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "K8s.Workshop.Web", "K8s.Workshop.Web\K8s.Workshop.Web.csproj", "{22D86959-0C46-41D5-BB6C-5445D2212DB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4CE0381-EB89-4DCA-8E64-BB50F5A0001A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.gitignore = ..\..\.gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
