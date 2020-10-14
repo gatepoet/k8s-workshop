@@ -60,3 +60,11 @@ Run containers
 
 start http://localhost:28228/
 ```
+
+Run website with TLS
+
+```cmd
+:(src\K8s.Workshop\run-docker-tls.cmd)
+
+start http://localhost:28228/
+```
