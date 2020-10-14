@@ -14,15 +14,49 @@ Clone the repository at <https://github.com/gatepoet/k8s-workshop>
 
 ```cmd
 git clone https://github.com/gatepoet/k8s-workshop.git
+cd k8s-workshop
 ```
 
-Compile and run both projects. Verify that the website can get data from the api by visiting the website at <https://localhost:44378>
+Compile and run both projects
 
 ```cmd
-cd k8s-workshop/src/K8s.Workshop
-dotnet restore
-dotnet build
-start "Api" /d K8s.Workshop.Api dotnet run
-start "Web" /d K8s.Workshop.Web dotnet run
-start https://localhost:44378
+cd src/K8s.Workshop
+
+:(src\K8s.Workshop\run-local.cmd)
+
+start http://localhost:28228/
+```
+
+Verify that the website can get data from the api by visiting the website at <http://localhost:28228/>
+
+Stop the running servers with `Ctrl+C`
+
+### Create Docker containers
+
+Add a file named `Dockerfile` (no file-extension) to each of the two projects.
+
+#### `K8s.Workshop.Api/Dockerfile`
+
+```dockerfile
+:(src\K8s.Workshop\K8s.Workshop.Api\Dockerfile)
+```
+
+#### `K8s.Workshop.Web/Dockerfile`
+
+```dockerfile
+:(src\K8s.Workshop\K8s.Workshop.Web\Dockerfile)
+```
+
+Build and tag containers
+
+```cmd
+:(src\K8s.Workshop\build-docker.cmd)
+```
+
+Run containers
+
+```cmd
+:(src\K8s.Workshop\run-docker.cmd)
+
+start http://localhost:28228/
 ```
