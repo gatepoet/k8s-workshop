@@ -12,14 +12,14 @@
 
 Clone the repository at <https://github.com/gatepoet/k8s-workshop>
 
-```batchfile
+```shell
 git clone https://github.com/gatepoet/k8s-workshop.git
 cd k8s-workshop
 ```
 
 Compile and run both projects
 
-```batchfile
+```shell
 cd src/K8s.Workshop
 
 {% include_relative src/K8s.Workshop/run-local.cmd %}
@@ -49,13 +49,13 @@ Add a file named `Dockerfile` (no file-extension) to each of the two projects.
 
 Build and tag containers
 
-```batchfile
+```shell
 {% include_relative src/K8s.Workshop/build-docker.cmd %}
 ```
 
 Run containers
 
-```batchfile
+```shell
 {% include_relative src/K8s.Workshop/run-docker.cmd %}
 
 start http://localhost:28228/
@@ -63,7 +63,7 @@ start http://localhost:28228/
 
 Run website with TLS
 
-```batchfile
+```shell
 {% include_relative src/K8s.Workshop/run-docker-tls.cmd %}
 ```
 
@@ -71,20 +71,20 @@ Run website with TLS
 
 Start a local registry server
 
-```batchfile
+```shell
 docker run -dp 5000:5000 --restart=always --name registry registry
 ```
 
 Push docker images to local registry
 
-```batchfile
+```shell
 docker push localhost:5000/k8s-workshop-api
 docker push localhost:5000/k8s-workshop-web
 ```
 
 Install charts
 
-```batchfile
+```shell
 {% include_relative run-k8s.cmd %}
 
 start http://localhost:28228/
@@ -92,6 +92,6 @@ start http://localhost:28228/
 
 Clean up
 
-```batchfile
+```shell
 {% include_relative cleanup-k8s.cmd %}
 ```
