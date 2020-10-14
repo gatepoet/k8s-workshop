@@ -68,3 +68,32 @@ Run website with TLS
 
 start http://localhost:28228/
 ```
+
+### Create Helm charts
+
+Start a local registry server
+
+```cmd
+docker run -dp 5000:5000 --restart=always --name registry registry
+```
+
+Push docker images to local registry
+
+```cmd
+docker push localhost:5000/k8s-workshop-api
+docker push localhost:5000/k8s-workshop-web
+```
+
+Install charts
+
+```cmd
+:(run-k8s.cmd)
+
+start http://localhost:28228/
+```
+
+Clean up
+
+```cmd
+:(cleanup-k8s.cmd)
+```
