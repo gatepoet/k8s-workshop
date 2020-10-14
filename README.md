@@ -22,7 +22,7 @@ Compile and run both projects
 ```cmd
 cd src/K8s.Workshop
 
-:(src\K8s.Workshop\run-local.cmd)
+{% include_relative src/K8s.Workshop/run-local.cmd %}
 
 start http://localhost:28228/
 ```
@@ -38,25 +38,25 @@ Add a file named `Dockerfile` (no file-extension) to each of the two projects.
 #### `K8s.Workshop.Api/Dockerfile`
 
 ```dockerfile
-:(src\K8s.Workshop\K8s.Workshop.Api\Dockerfile)
+{% include_relative src/K8s.Workshop/K8s.Workshop.Api/Dockerfile %}
 ```
 
 #### `K8s.Workshop.Web/Dockerfile`
 
 ```dockerfile
-:(src\K8s.Workshop\K8s.Workshop.Web\Dockerfile)
+{% include_relative src/K8s.Workshop/K8s.Workshop.Web/Dockerfile %}
 ```
 
 Build and tag containers
 
 ```cmd
-:(src\K8s.Workshop\build-docker.cmd)
+{% include_relative src/K8s.Workshop/build-docker.cmd %}
 ```
 
 Run containers
 
 ```cmd
-:(src\K8s.Workshop\run-docker.cmd)
+{% include_relative src/K8s.Workshop/run-docker.cmd %}
 
 start http://localhost:28228/
 ```
@@ -64,7 +64,7 @@ start http://localhost:28228/
 Run website with TLS
 
 ```cmd
-:(src\K8s.Workshop\run-docker-tls.cmd)
+{% include_relative src/K8s.Workshop/run-docker-tls.cmd %}
 
 start http://localhost:28228/
 ```
@@ -87,7 +87,7 @@ docker push localhost:5000/k8s-workshop-web
 Install charts
 
 ```cmd
-:(run-k8s.cmd)
+{% include_relative run-k8s.cmd %}
 
 start http://localhost:28228/
 ```
@@ -95,5 +95,5 @@ start http://localhost:28228/
 Clean up
 
 ```cmd
-:(cleanup-k8s.cmd)
+{% include_relative cleanup-k8s.cmd %}
 ```
