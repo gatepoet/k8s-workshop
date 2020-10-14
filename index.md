@@ -90,6 +90,14 @@ Install charts
 start http://localhost:28228/
 ```
 
+Modify generated charts
+
+[git commit reference](https://github.com/gatepoet/k8s-workshop/commit/c11b0bc30fc0e04114bcb666123abec2d860be25?branch=c11b0bc30fc0e04114bcb666123abec2d860be25&diff=unified)
+
+Move appsettings to config maps
+
+[git commit reference](https://github.com/gatepoet/k8s-workshop/commit/13a29ad815b6928d805a75ef7f5f3d7bbe3122d7?branch=13a29ad815b6928d805a75ef7f5f3d7bbe3122d7&diff=unified)
+
 Clean up
 
 ```shell
